@@ -1,0 +1,409 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@600&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+ 
+*{
+    font-family:'Lato', sans-serif;
+    /* reset */
+    padding: 0;
+    margin: 0;
+}
+
+nav{
+    background-color:rgb(248, 211, 218);
+    padding: 4px 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 115px;
+}
+
+    nav img{
+        width: 80%;
+        height: 200px;
+     
+    }
+
+    nav ul{
+        list-style: none;
+        
+        display: flex;
+    }
+
+    nav ul li{
+        margin-right: 14px;
+    }
+
+    nav ul li a{
+        color: 
+        rgb(5, 5, 5);
+        text-decoration: none;
+    }
+
+/* box model --  width (ancho) - alto (height) - margin (margen) - padding (relleno) - border (borde) */
+*, ::before ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.encabezado img{
+    width: 100%;
+    height: 100%;
+    }
+    .encabezado{
+        width: 1080px;
+        height: 700px;
+        overflow: hidden;
+        position: relative;
+        margin: 10px auto;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        }
+    .encabezado:hover{ 
+        transform: scale(1.1);
+        box-shadow: 5px 5px 5px black;
+    }
+
+.encabezado p{
+    font-family: 'Caprasimo', cursive;
+    font-size: 6rem;
+    color: white;
+    position: absolute;
+    top: 27%;
+    left: 5%;
+    text-shadow: black;
+}
+.encabezado br{
+    font-family: 'Caprasimo', cursive;
+}
+
+#search .buscador{
+    grid-area: actions;
+    position: static;
+     display: flex;
+     justify-content: center;
+    align-items: center;
+    }
+
+#search .buscador form{
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(248, 222, 226);
+}
+
+#search .buscador input{
+    width: 800px;
+    border: none;
+    background-color: rgb(241, 232, 240);
+    border-radius: 3px;
+    align-items: center;
+    width: 100%;
+}
+
+.box-adds{
+    background-color: rgb(248, 242, 242);
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+}
+.box-adds-dos{
+    background-color: rgb(248, 242, 242);
+    text-align: center;
+    background-image:url(../imgs/diseños/pixel-heart.webp);
+    background-position: center;
+background-size: cover;
+background-repeat: repeat;
+height: 100vh;
+}
+
+/* empieza tips */
+.tips{ 
+    background-color: pink;
+    height: auto;
+    margin: 25px;
+    padding: 50px;
+    font-size: 20px; 
+}
+.tips p{
+    font-size: 10px;
+}
+.video{
+ display: flex;
+ justify-content: center;
+
+
+}
+
+.font{
+    font-size: 40px;
+}
+
+.intro{
+    background-color: pink;
+    height: auto;/* alto */
+    margin: 20px auto;
+    padding: 10px 30px;
+    
+}
+.nosotros p{
+    text-align: center;
+    font-size: 20px;
+}
+.info-compra{
+
+    background-color: rgb(247, 219, 223);
+    height: auto;/* alto */
+    margin: 25px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+   align-items: center;
+
+}
+.info-compra p{
+    text-align: center;
+    font-size: 20px;
+   
+}
+.info-compra svg{ fill: palevioletred;
+    width: 50px;
+    height: 50px;
+
+
+}
+.info-compra div{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+    .intro p{
+        font-size: 20px;
+        color: rgb(7, 7, 7);
+    }
+
+h1{
+    margin: 20px 0;
+    color: rgb(12, 12, 12);
+    text-align: center;
+}
+
+h2{
+    margin-top: 40px;
+    text-align: center;
+    background-color: rgb(75, 61, 61);
+}
+
+main{
+    padding: 10px 30px;
+}
+
+h2{
+    color: pink;
+}
+
+.diseños-destacados{font-size: 25px;
+
+}
+.diseño-productos{
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.diseño-productos figure{
+    width: 20%;
+}
+
+.diseño-productos figure img{
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius:4px ;
+}
+
+
+   .diseño-productos figure h2{
+    color: pink;
+    margin: 10px 0;
+    font-size: 25px;
+    margin-bottom: 25px;
+    background-color: black;
+    height: 70px;
+
+   }
+
+   .diseño-productos figure a{
+    text-decoration: none;
+    color: rgb(255, 244, 244);
+    background-color:  rgb(54, 52, 52);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 20px;
+   }
+ 
+footer{
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: pink;
+}
+
+    footer svg{
+        fill: rgb(0, 0, 0);
+        width: 100px;
+        height: 25px;
+    }
+
+/* inicia pantalla de contacto */
+
+.contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.contacto form{
+    padding: 30px;
+    width: 50%;
+    background-color: rgb(248, 222, 226);
+}
+
+    form label{
+        color: rgb(7, 7, 7);
+        /* display */
+        display: block;
+        margin-bottom: 4px
+    }
+
+    form input{
+        margin-bottom: 20px;
+        width: 100%;
+        height: 30px;
+        border-radius: 4px;
+        border: none;
+    }
+
+    form textarea{
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+
+    /* empieza sobre nosotros */
+
+.fondo{
+ background-image:url(../imgs/diseños/pixel-heart.webp);
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+.info-redes{
+position: fixed;
+bottom: 0;
+left: 0;
+width: 100%;
+}
+.whatsapp{
+    position: fixed;
+    width: 80px;
+    right: 5%;
+    bottom: 100px;
+
+}
+
+/* inicia promo */
+
+.promos{
+    padding: 30px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+    .promos figure{
+        width: 24%;
+        margin-bottom: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 0 20px;
+    }
+        .promos figure img{
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        .promos figure label{
+            color: rgb(0, 0, 0);
+            display: block;
+            margin: 18px 0;
+        }
+        .promos figure h2{
+            margin-bottom: 5px;
+            background-color:black;
+            height: 70px;
+        }
+        .promos figure a{
+            background-color: rgb(54, 52, 52);
+            color: white;
+            text-decoration: none;
+            padding: 6px;
+            border-radius: 3px;
+        }
+        .promos figure .text-line-through{
+            text-decoration: line-through;
+            color: inherit;
+            margin-bottom: -8px;
+        }
+
+
+/*incicia pantalla bem*/
+
+.about{
+    background-color: gray;
+    padding: 20px 50px;
+}
+.about__box{
+    display: flex;
+    flex-direction: row;
+justify-content: flex-start;
+align-items: flex-start;
+}
+.about__heading--xl{
+    font-size: 3em;
+    color: black;
+}
+.about__text--regular{
+    font-weight: 400;
+    font-size: 1.1em;
+    color: black;
+}
+
+.about__img--fluid{
+    width: 100%;
+}
+
+.about__btn--sm{
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    padding: 4px 6px;
+    background-color: beige;
+    border-radius:4px;
+
+}
+.about__box--reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.about__heading--lg{
+    font: 2.2em;
+    color: antiquewhite;
+}
+.about__text--light{
+    font-weight: 300;
+}
